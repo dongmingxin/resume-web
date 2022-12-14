@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className='flex flex-col gap-4 items-center text-sm'>
                     <div className='flex flex-row gap-16 items-center'>
                         <Button variant='link' icon={githubLogo} iconSize={30}>
-                            Github
+                            <a href='https://github.com/dongmingxin/resume-web'>Github</a>
                         </Button>
                     </div>
                     <span>©Made by Mingxin Dong</span>
