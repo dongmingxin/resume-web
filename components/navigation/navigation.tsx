@@ -5,10 +5,12 @@ import Image from "next/image"
 import Link from "next/link";
 import Button from '../../UI/button';
 import sendIcon from '../../public/send.svg';
+import { useModelContext } from '../../context/modal';
 
 export const Navigation = () => {
+    const { toggleModal } = useModelContext();
   return (
-    <nav className='fixed top-0 z-30 w-full border-b border-slate-200/10 bg-gradient-to-b from-black to-transparent backdrop-blur-lg box-border'>
+    <nav className='fixed top-0 z-10 w-full border-b border-slate-200/10 bg-gradient-to-b from-black to-transparent backdrop-blur-lg box-border'>
         <div className='mx-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12'>
             <div className="flex h-16 items-center justify-between">
                 <Link href='/'>
@@ -27,7 +29,7 @@ export const Navigation = () => {
                         </div>
                     </div>
                 </Link>
-                <Button size='sm' variant='solid' icon={sendIcon}>
+                <Button size='sm' variant='solid' icon={sendIcon} onClick={toggleModal}>
                     Contact
                 </Button>
             </div>

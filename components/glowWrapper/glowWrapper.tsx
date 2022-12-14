@@ -1,17 +1,22 @@
 'use client'
 
 import React from 'react'
+import classNames from 'classnames'
 import './index.css'
 
 type Props = {
-  children: React.ReactNode
+  children: React.ReactNode,
+  classname?: string
 }
 
 const GlowWrapper = ({
-    children
+    children,
+    classname
 }:Props) => {
+
+  const wrapperStyle = classNames('glowing-wrapper', classname)
   return (
-    <div className='glowing-wrapper'>
+    <div className={wrapperStyle}>
         {children}
     </div>
   )

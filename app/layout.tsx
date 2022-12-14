@@ -2,6 +2,7 @@
 
 import '../styles/globals.css'
 import { Navigation } from '../components/navigation'
+import { ModalProvider } from '../context/modal';
 import Footer from '../components/footer';
 
 export default function RootLayout({
@@ -14,13 +15,18 @@ export default function RootLayout({
       className='bg-black text-slate-200'
       lang="en"
     >
-      <head></head>
+      <head>
+        <title>My Resume</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      </head>
       <body>
-        <Navigation/>
-        <main>
-          {children}
-        </main>
-        <Footer/>
+        <ModalProvider>
+          <Navigation/>
+          <main>
+            {children}
+          </main>
+          <Footer/>
+        </ModalProvider>
       </body>
     </html>
   )

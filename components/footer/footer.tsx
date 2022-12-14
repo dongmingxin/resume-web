@@ -13,7 +13,7 @@ const Footer = () => {
                             Github
                         </Button>
                     </div>
-                    <span>©Made with Maurice Kleine</span>
+                    <span>©Made by Mingxin Dong</span>
                 </div>
             </div>
         </div>

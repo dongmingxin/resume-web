@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from 'react'
 import { motion } from "framer-motion";
 import { JobIntro } from "../components/jobIntro"
 import PastProject from "../components/pastProject"

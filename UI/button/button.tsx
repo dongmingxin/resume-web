@@ -22,7 +22,7 @@ const Button = ({
     ...restProps
 }:ButtonProps) => {
 
-    const btnStyle = classNames('flex flex-row items-center  gap-2 relative z-10 border border-transparent', className,{
+    const btnStyle = classNames('flex flex-row items-center  gap-2 relative border border-transparent', className,{
       'py-2 px-6' : size === 'sm',
       'py-3 px-8' : size === 'md',
       'hover:opacity-50 text-slate-200 text-lg w-full h-full' : variant === 'link',

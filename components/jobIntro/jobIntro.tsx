@@ -21,9 +21,8 @@ export const JobIntro = () => {
               James John
           </div>
           <div className="font-semibold font-serif text-2xl sm:text-3xl tracking-tight text-slate-400 tracking-tight">
-              Freelance
               &nbsp;
-              <Typewriter text={['Frontend', 'Backend', 'UI/UX']}/>
+              <Typewriter text={['UI/UX', 'Full-Stack']}/>
               &nbsp;
               Developer
           </div>
@@ -34,7 +33,7 @@ export const JobIntro = () => {
         initial={{ opacity: 0, y: 100 }}
         transition={{ delay: 0.3, ease: "easeOut", duration: 2 }}
       >
-        <div className='flex flex-row gap-16'>
+        <div className='flex flex-row gap-2'>
             <Button size='md' variant='solid' icon={send}>Contact</Button>
             <Button size='md' variant='solid' icon={linkedinIcon}>Linkedin</Button>
         </div>
