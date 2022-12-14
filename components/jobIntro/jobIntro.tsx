@@ -4,10 +4,12 @@ import React from 'react'
 import Button from '../../UI/button';
 import { motion } from "framer-motion";
 import { Typewriter } from '../typewriter';
+import { useModelContext } from '../../context/modal';
 import send from '../../public/send.svg';
 import linkedinIcon from '../../public/link.svg';
 
 export const JobIntro = () => {
+  const { toggleModal } = useModelContext();
   return (
   <div className="mx-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12">
     <div className="flex flex-col h-screen gap-16 items-center justify-center">
@@ -34,7 +36,7 @@ export const JobIntro = () => {
         transition={{ delay: 0.3, ease: "easeOut", duration: 2 }}
       >
         <div className='flex flex-row gap-2'>
-            <Button size='md' variant='solid' icon={send}>Contact</Button>
+            <Button size='md' variant='solid' icon={send} onClick={toggleModal}>Contact</Button>
             <Button size='md' variant='solid' icon={linkedinIcon}>Linkedin</Button>
         </div>
       </motion.div>
