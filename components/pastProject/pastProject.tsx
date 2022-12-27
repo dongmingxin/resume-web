@@ -25,7 +25,7 @@ const PastProject = () => {
         </div>
         <div className='mx-auto w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12'>
             <GlowWrapper>
-                <div className='grid grid-cols-2 sm:grid-cols-3 p-8 lg:grid-cols-3 grid-rows-none md:grid-rows-2 gap-8 items-center justify-items-center font-serif text-2xl font-semibold'>
+                <div className='grid grid-cols-2 sm:grid-cols-3 p-2 md:p-8 lg:grid-cols-3 grid-rows-none md:grid-rows-2 gap-8 items-center justify-items-center font-serif text-2xl font-semibold overflow-hidden'>
                     <Button variant='link' icon={langpoly} iconSize={50}>Langpoly</Button>
                     <Button variant='link' icon={pupiloverIcon} iconSize={50}>PopiLovers</Button>
                     <Button variant='link' icon={oktion} iconSize={50}>Oktion</Button>
